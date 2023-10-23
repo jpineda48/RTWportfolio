@@ -4,13 +4,15 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Link} from 'react-scroll'
 
+
+
 export default function NavBar(){
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[##fbf7f5] text-black'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 pt-10 bg-[#fbf7f5] text-black'>
             <div>
-                <p>Welcome to my portfolio!</p>
+                <p></p>
             </div>
 
            
@@ -35,6 +37,13 @@ export default function NavBar(){
                      <li><Link  to="contact" smooth={true} offset={50} duration={500}>
                     Contact
                      </Link></li>
+                     <li>
+                        <button>
+                        <a className="button" href='' download = "ResumeOfficial.pdf">
+                            Download Resume
+                            </a>
+                            </button>
+                     </li>
                 </ul>
            
             <div onClick={handleClick} className='md:hidden z-10'>
@@ -65,30 +74,19 @@ export default function NavBar(){
             </ul>
             <div className='hidden lg:flex fixed flex-column top-[35%] left-0'>
                 <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#dbdede]'>
                         <a className='flex justify-between items-center w-full text-grey-300' 
-                        href="/">
+                        href="https://www.linkedin.com/in/jacqueline-e-pineda/">
                             Linkedin <FaLinkedin size={30}/>
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#dbdede]'>
                         <a className='flex justify-between items-center w-full text-grey-300' 
-                        href="/">
+                        href="https://github.com/jpineda48">
                             Github <FaGithub size={30}/>
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-                        <a className='flex justify-between items-center w-full text-grey-300' 
-                        href="/">
-                            Email <HiOutlineMail size={30}/>
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                        <a className='flex justify-between items-center w-full text-grey-300' 
-                        href="/">
-                            Linkedin <BsFillPersonLinesFill size={30}/>
-                        </a>
-                    </li>
+                   
                 </ul>
 
             </div>
