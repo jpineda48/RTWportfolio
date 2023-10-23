@@ -1,8 +1,7 @@
 import React, { useState }from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import {HiOutlineMail} from 'react-icons/hi'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Link} from 'react-scroll'
+import pdf from '../assets/Full_Stack_Engineer.pdf'
 
 
 
@@ -39,7 +38,7 @@ export default function NavBar(){
                      </Link></li>
                      <li>
                         <button>
-                        <a className="button" href='' download = "ResumeOfficial.pdf">
+                        <a className="button" href={pdf} download ="Full_Stack_Engineer.pdf">
                             Download Resume
                             </a>
                             </button>
