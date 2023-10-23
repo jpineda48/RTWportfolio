@@ -1,100 +1,80 @@
 import React from 'react'
-import WorkImg from '../assets/firebase.png'
-import realEstate from '../assets/aws.png'
+import goals from '../assets/Goals.jpg'
+import birthday from '../assets/birthday.jpg'
+import memory from '../assets/memory.jpg'
+
 
 const Work = () => {
   return (
     <div name='work' className='w-full md:h-screen text-black bg-[#fbf7f5]'>
        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 text-black border-pink-600'>Work</p>
-            <p className='py-6'>Checkout Some of my work</p>
+            <p className='text-4xl font-bold inline  text-black'>Featured Projects</p>
         </div>
 
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
 
-            <div style={{backgroundImage: `url(${WorkImg})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
+            <div style={{backgroundImage:`url(${goals})`,
+                          backgroundSize: 'cover'
+        
+            }} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
                 
                 <div className='opacity-0 group-hover:opacity-100'>
-                    <span className='text-2xl font-bold text-white tracking-wider'>
-                        REACT JS APP
+                    <span className='text-3xl font-bold text-black px-4 py-3 m-2 tracking-wider'>
+                        MyGoals
+                    </span>
+                   
+                    <div className='pt-8 text-center'>
+                        <a href="https://mygoalslog.netlify.app/">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-black text-white  font-bold text-lg'>Demo</button>
+                        </a>
+                        <a href="/">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-black text-white font-bold text-lg'>Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style={{backgroundImage: `url(${birthday})`, backgroundSize: 'cover'}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
+                
+                <div className='opacity-0 group-hover:opacity-100'>
+                    <span className='text-3xl font-bold text-white tracking-wider'>
+                        Birthday Blaster
+                    </span>
+                    
+                    
+                    <div className='pt-8 text-center'>
+                        <a href="https://birthdayblaster.onrender.com/">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-red-400 text-white font-bold text-lg'>Demo</button>
+                        </a>
+                        <a href="https://birthdayblaster.onrender.com/">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-red-400 text-white font-bold text-lg'>Code</button>
+                        </a>
+                       
+                    </div>
+                   
+                </div>
+                
+            </div>
+            <div style={{backgroundImage: `url(${memory})`, backgroundSize: 'cover'}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
+                
+                <div className='opacity-0 group-hover:opacity-100'>
+                    <span className='text-3xl font-bold text-white tracking-wider'>
+                        CONCENTRATION
                     </span>
                     <div className='pt-8 text-center'>
                         <a href="/">
                             <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                         </a>
-                        <a href="/">
+                        <a href="https://github.com/jpineda48/Concentration-Game">
                             <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                         </a>
                     </div>
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${WorkImg})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
-                
-                <div className='opacity-0 group-hover:opacity-100'>
-                    <span className='text-2xl font-bold text-white tracking-wider'>
-                        REACT JS APP
-                    </span>
-                    <div className='pt-8 text-center'>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                        </a>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div style={{backgroundImage: `url(${WorkImg})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
-                
-                <div className='opacity-0 group-hover:opacity-100'>
-                    <span className='text-2xl font-bold text-white tracking-wider'>
-                        REACT JS APP
-                    </span>
-                    <div className='pt-8 text-center'>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                        </a>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div style={{backgroundImage: `url(${WorkImg})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
-                
-                <div className='opacity-0 group-hover:opacity-100'>
-                    <span className='text-2xl font-bold text-white tracking-wider'>
-                        REACT JS APP
-                    </span>
-                    <div className='pt-8 text-center'>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                        </a>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div style={{backgroundImage: `url(${WorkImg})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto'>
-                
-                <div className='opacity-0 group-hover:opacity-100'>
-                    <span className='text-2xl font-bold text-white tracking-wider'>
-                        REACT JS APP
-                    </span>
-                    <div className='pt-8 text-center'>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                        </a>
-                        <a href="/">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+         
+        
         </div>
        </div>
     </div>

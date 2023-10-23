@@ -9,50 +9,53 @@ import AWS from '../assets/aws.png'
 import GitHub from '../assets/github.png'
 import Tailwind from '../assets/tailwind.png'
 import Mongo from '../assets/mongo.png'
+import {BiLogoReact, BiLogoCss3, BiLogoJavascript, BiLogoPython, BiLogoMongodb} from 'react-icons/bi'
+import {AiFillHtml5, AiFillGithub} from 'react-icons/ai'
+import {IoLogoNodejs} from 'react-icons/io'
 
 
 
 const Skills = () => {
   return (
-    <div name="skills" className='w-full h-screen bg-[#0a192f] text-white'>
+    <div name="skills" className='w-full h-auto bg-[#fbf7f5] text-black'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-60'>Experience</p>
-            <p className='py-4'>These are the techs ive worked with</p>
+           
+            
         </div>
         
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 text-center py-8'>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={HTML} alt="htm icon" />
+        <div >
+            <AiFillHtml5 size={50} className='flex justify-between items-center w-full'/>
             <p className='my-4'>HTML</p>
         </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={CSS} alt="htm icon" />
-            <p className='my-4'>HTML</p>
+        <div >
+            <BiLogoCss3 size={50} className='flex justify-between items-center w-full'/>
+            <p className='my-4'>CSS</p>
         </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={JavaScript} alt="htm icon" />
-            <p className='my-4'>HTML</p>
+        <div >
+            <BiLogoJavascript size={50} className='flex justify-between items-center w-full'/>
+            <p className='my-4'>JavaScript</p>
         </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={ReactImg} alt="htm icon" />
-            <p className='my-4'>HTML</p>
+        <div >
+            <IoLogoNodejs size={50} className='flex justify-between items-center w-full'/>
+            <p className='my-4'>Node.js</p>
         </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={Node} alt="htm icon" />
-            <p className='my-4'>HTML</p>
+        <div >
+            <BiLogoPython size={50} className='flex justify-between items-center w-full'/>
+            <p className='my-4'>Python</p>
         </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={FireBase} alt="htm icon" />
-            <p className='my-4'>HTML</p>
+        <div >
+            <BiLogoReact size={50} className='flex justify-between items-center w-full'/>
+            <p className='my-4'>React</p>
         </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={GitHub} alt="htm icon" />
-            <p className='my-4'>HTML</p>
+        <div >
+            <BiLogoMongodb size={50} className='flex justify-between items-center w-full' />
+            <p className='my-4'>Mongo.db</p>
         </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={Tailwind} alt="htm icon" />
-            <p className='my-4'>HTML</p>
+        <div >
+            <AiFillGithub size={50} className='flex justify-between items-center w-full' />
+            <p className='my-4'>Github</p>
         </div>
       </div>
       </div>
