@@ -8,6 +8,7 @@ import Contact from "./componants/Contact";
 
 
 
+
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
      <About/>
      <Skills/>
      <Work/>
+    
      <Contact/>
     
      
