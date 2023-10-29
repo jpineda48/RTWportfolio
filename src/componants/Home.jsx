@@ -5,11 +5,11 @@ import Me from '../assets/Profile Pic.jpeg'
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen m-0 bg-[#fbf7f5] text-black'>
-    <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full '>
+    <div name='home' className='w-full h-screen m-0 bg-[#fbf7f5]'>
+    <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-end h-full pb-10'>
       <div className='flex flex-col lg:flex-row items-center'>
         <div className='text-center lg:text-left lg:mr-8'>
-          <p>Hello, my name is</p>
+          <p className='mb-0'>Hello, my name is</p>
           <h1 className='text-4xl sm:text-5xl font-bold'>Jacqueline Pineda</h1>
           <h2 className='text-4xl sm:text-5xl font-bold py-3'>
             I am a <span className='text-red-500'>Full Stack Developer</span>
@@ -30,8 +30,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-    
-  </div>
+</div>
 );
 
 }
