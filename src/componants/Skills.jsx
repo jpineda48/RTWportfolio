@@ -19,6 +19,10 @@ const Skills = () => {
   return (
     <div name="skills" className='w-full h-auto bg-[#fbf7f5] text-black'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+      <p className=' text-center med:text-center text-5xl font-bold'> TOOL BOX</p>
+      <br/>
+      <br/>
+
         <div>
            
             
